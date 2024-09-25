@@ -2,41 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class=" sticky top-0 backdrop-blur-lg pb-10">
-      <div class="bg-slate-100 p-7">
-        <div class=" mx-auto lg:flex justify-around pb-3">
-          <div class="flex items-center">
-            <a href="blog.html" class="btn bg-lime-400">Blog</a>
-          </div>
-          <div class="flex items-center pt-3">
-            <img src="assets/logo.png">
-            <h1 class="text-xl">Donate Bangladesh</h1>
-          </div>
-          <div class="flex items-center pt-3">
-            <img class="" src="assets/coin.png">
-            <h1 class="text-xl"><span id="main-amount">5500</span> BDT</h1>
-          </div>
+  <header id="header" class=" sticky top-0 backdrop-blur-lg pb-10">
+    <div class="bg-slate-100 p-7">
+      <div class=" mx-auto lg:flex justify-around pb-3">
+        <div class="flex items-center">
+          <a href="#blog" id="blog-box" class="btn bg-lime-400">Blog</a>
+          <a href="index.html" id="home-box" class=" hidden btn bg-lime-400">home</a>
         </div>
-    
+        <div class="flex items-center pt-3">
+          <img src="assets/logo.png">
+          <h1 class="text-xl">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center pt-3">
+          <img class="" src="assets/coin.png">
+          <h1 class="text-xl"><span class=" main-amount" id="">5500</span> BDT</h1>
+        </div>
       </div>
-      </div>
-    
-      <div class="button-div flex justify-center pt-10 gap-5">
-        <button id="button-1" class="btn bg-lime-400 ">Donation</button>
-        <a href="history.html"> <button id="button-2" class="btn">History</button></a>
-    
-      </div>
-    </header>
+    </div>
+    </div>
+    <div id="nav-button" class="button-div flex justify-center pt-10 gap-5">
+      <a href="index.html"> <button id="button-1" class="btn bg-lime-400 ">Donation</button></a>
+      <a href="#history"> <button id="button-2" class="btn">History</button></a>
+    </div>
+  </header>
 
-     <main class="mt-10">
+  <main class="mt-10 ">
+    <div id="main" class="">
       <!-- token-1 -->
       <div class="lg:flex w-4/5 mx-auto">
         <div class="w-full">
@@ -49,33 +48,42 @@
           </div>
           <h1 class="text-1xl font-bold pt-10">Donate for Flood at Noakhali, Bangladesh</h1>
           <p class="py-10">
-            The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+            help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
+            makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
+            of those in need.
           </p>
-          <input id="money-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-10 " />
+          <input id="money-input" type="text" placeholder="Write Donation Amount"
+            class="input input-bordered w-full mt-10 " />
           <button id="donate-now" class="btn btn-block bg-lime-400 mt-10">Donate Now</button>
         </div>
       </div>
 
-     <!-- token-2 -->
+      <!-- token-2 -->
       <div class="lg:flex w-4/5 mx-auto mt-20">
         <div class="w-full">
-          <img class="w-4/5" src="./assets/noakhali.png" alt="">
+          <img class="w-4/5" src="./assets/feni.png" alt="">
         </div>
         <div class="w-4/5">
           <div class="flex">
             <img src="./assets/coin.png" alt="">
-            <h1 class="text-xl">600 BDT</h1>
+            <h1 class="text-xl"><span id="add-money-1">600</span> BDT</h1>
           </div>
           <h1 class="text-1xl font-bold pt-10">Donate for Flood Relief in Feni,Bangladesh</h1>
           <p class="py-10">
-            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your
+            generous donation will help provide immediate aid, including food, clean water, and medical supplies, to
+            those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the
+            aftermath of this disaster. Every contribution counts towards making a real difference. Please consider
+            donating today to assist those in urgent need.
           </p>
-          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-10 " />
-          <button class="btn btn-block bg-lime-400 mt-10">Donate Now</button>
+          <input id="money-input-1" type="text" placeholder="Write Donation Amount"
+          class="input input-bordered w-full mt-10 " />
+        <button id="donate-now-1" class="btn btn-block bg-lime-400 mt-10">Donate Now</button>
         </div>
       </div>
 
-       <!-- token-3 -->
+      <!-- token-3 -->
       <div class="lg:flex w-4/5 mx-auto mt-20 mb-20">
         <div class="w-full">
           <img class="w-4/5" src="./assets/quota-protest.png" alt="">
@@ -83,29 +91,83 @@
         <div class="w-4/5">
           <div class="flex">
             <img src="./assets/coin.png" alt="">
-            <h1 class="text-xl">2400 BDT</h1>
+            <h1 class="text-xl"><span id="add-money-2">2400</span> BDT</h1>
           </div>
           <h1 class="text-1xl font-bold pt-10">Aid for Injured in the Quota Movement</h1>
           <p class="py-10">
-            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals.
+            Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those
+            affected. By contributing, you help ensure that injured individuals receive the care and support they need
+            during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in
+            their recovery. Please consider making a donation to support these brave individuals in their time of need.
           </p>
-          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-10 " />
-          <button class="btn btn-block bg-lime-400 mt-10">Donate Now</button>
+          <input id="money-input-2" type="text" placeholder="Write Donation Amount"
+          class="input input-bordered w-full mt-10 " />
+        <button id="donate-now-2" class="btn btn-block bg-lime-400 mt-10">Donate Now</button>
         </div>
       </div>
-  
-<div class="w-1/4 bg-slate-200 flex flex-col justify-center items-center">
-  <div id="Congrates" class="flex flex-col justify-center items-center bg-slate-200   rounded-lg p-4 gap-3 "></div>
-          <h1 class="text-4xl">Congrates!</h1>
-          <img src="./assets/coin.png" alt="">
-          <h1 class="text-1xl">You Have Donated Humankind</h1>
-          <button class="btn btn-wide">Clos confirmation</button>
+    </div>
+    <!-- model -->
+    <div id="confirmation-modal" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+      <div class="m-auto card bg-base-100 w-96 shadow-xl">
+        <div class="card-body text-center">
+          <h2 class="font-bold text-3xl">Congrats!</h2>
+          <img src="assets/coin.png" alt="coin image" class="w-11 m-auto py-6">
+          <p>You have donated for Humankind</p>
+          <h3 class="font-bold text-2xl">Successfully</h3>
+          <div class="card-actions justify-center mt-6">
+            <a> <button id="close-confirmation-modal" class="btn border bg-slate-100">Close Confirmation</button></a>
+
+          </div>
+        </div>
       </div>
-</div>
-      
-     </main>
-     <script src="./js/donate.js"></script>
-     <script src="./js/features.js"></script>
+    </div>
+    <!-- history -->
+    <div id="history" class="hidden card-body bg-neutral-content gap-5 mt-10 rounded-xl py-5">
+    </div>
+    <!-- query box -->
+    <div id="blog" class="hidden join join-vertical w-full p-20 gap-2">
+      <div class="collapse collapse-arrow join-item border-base-300 border py-10">
+        <input type="radio" name="my-accordion-4" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is thr Document Object Model(DOM)</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical
+            structure of documents and the way a document is accessed and manipulated.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border py-10">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">How do you select on element from the DOM</div>
+        <div class="collapse-content">
+          <p>Suppose you're looking to modify the text on your webpage using JavaScript, maybe in reaction to user
+            inputs, and you need specific text to change accordingly. The initial step is to choose, or locate the
+            correct element within the DOM.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border py-10">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is
+          it useful</div>
+        <div class="collapse-content">
+          <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher
+            level in the DOM than the element on which the event originated. It allows us to attach a single event
+            listener for elements that exist now or in the future.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border py-10">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an elements and style sing the DOM</div>
+        <div class="collapse-content">
+          <p>You can also directly change each CSS property of an element by using the style property, which references
+            the element inline styles. You saw color and border . You can change all the CSS properties, by using
+            camelCase instead of dashes when the CSS property name contains them.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="./js/donate.js"></script>
+  <script src="./js/features.js"></script>
 </body>
 
 </html>
